@@ -1,0 +1,27 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#header {
+  width: 1904px;
+  height: 56px;
+  background-color: blue;
+  position: fixed;
+  left: 8px;
+}
+
+#left {
+  width: 240px;
+  height: 1331px;
+  background-color: green;
+  position: fixed;
+  float: left;
+}
