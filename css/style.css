@@ -12,60 +12,107 @@ body {
 }
 
 #header {
-  width: 1872px;
+  width: 1392px;
   height: 56px;
   padding: 0 16px;
   position: fixed;
-  /* background-color: blue; */
-  position: relative;
+  background-color: #202020;
+  /* position: relative; */
 }
+
+#header-left {
+  width: 169px;
+  height: 56px;
+  float: left;
+  margin-right: 135px;
+  /* background-color: green; */
+}
+
 #menu {
   width: 24px;
   height: 24px;
-  position: absolute;
-  padding: 16px 0;
-}
-
-#menu-button img{
-  width: 24px;
-  height: 24px;
+  padding: 16px 8px;
+  float: left;
 }
 
 #logo {
-  width: 129px;
+  width: 120px;
   height: 56px;
-  position: absolute;
-  padding: 18px 14px 18px 16px;
-  left: 50px;
+  float: left;
 }
 
 #logo-icon img {
   width: 90px;
   height: 20px;
+  padding: 18px 14px 18px 16px;
 }
 
 #logo-country {
+  margin: -45px 0 0 110px;
   color: #606060;
-  margin: 12px 0 0 -10px;
-  position: absolute;
-  left: 120px;
-  top: -5px;
+  float: left;
 }
 
+#header-center {
+  width: 728px;
+  height: 56px;
+  float: left;
+  margin-right: 135px;
+  /* background-color: yellow; */
+}
+
+#search-box {
+  width: 636px;
+  height: 40px;
+  float: left;
+  margin: 8px 0 8px 40px;
+  padding: 0 4px;
+}
 #search-input {
-  width: 525px;
-  height: 26px;
-  margin: auto;
-  display: inline-block;
+  width: 636px;
+  height: 40px;
+  margin: -3px 0px 0px 0px;
 }
 
 #search {
-  width: 525px;
-  height: 26px;
-  padding: 1px 0;
-  position: absolute;
-  left: 600px;
-  top: 10px;
+  width: 564px;
+  height: 40px;
+  float: left;
+}
+
+#search-icon1 img {
+  width: 24px;
+  height: 24px;
+}
+#search-icon1 {
+  width: 64px;
+  height: 46px;
+  border: none;
+  background-color: hsl(0deg 0% 19%);
+  padding: 1px 6px;
+  float: left;
+}
+
+#search-icon2 img {
+  width: 24px;
+  height: 24px;
+}
+
+#search-icon2 {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 40px;
+  margin: 8px 0 8px 4px ;
+  background-color: #181818;
+  float: left;
+}
+
+#header-right {
+  width: 225px;
+  height: 56px;
+  float: left;
+  background-color: red;
 }
 
 /* #left {
