@@ -69,6 +69,7 @@ body {
   margin: 8px 0 8px 40px;
   padding: 0 4px;
 }
+
 #search-input {
   width: 636px;
   height: 40px;
@@ -88,6 +89,7 @@ body {
   width: 24px;
   height: 24px;
 }
+
 #search-icon1 {
   width: 64px;
   height: 44px;
@@ -109,7 +111,7 @@ body {
   height: 40px;
   border: none;
   border-radius: 40px;
-  margin: 8px 0 8px 4px ;
+  margin: 8px 0 8px 4px;
   background-color: #f9f9f9;
   float: left;
 }
@@ -132,7 +134,7 @@ body {
   height: 40px;
   border: none;
   border-radius: 40px;
-  margin: 8px 0 8px 90px ;
+  margin: 8px 0 8px 90px;
   background-color: #f9f9f9;
   float: left;
 }
@@ -149,7 +151,7 @@ body {
   height: 40px;
   border: 1px solid #065fd4;
   color: #065fd4;
-  margin: 8px 0 8px 8px ;
+  margin: 8px 0 8px 8px;
   background-color: #f9f9f9;
   float: left;
   text-align: center;
@@ -173,7 +175,7 @@ body {
   left: 0;
   float: left;
   /* overflow: auto; */
-  max-height: 913px;
+  max-height: 95%;
   overflow-y: overlay;
 }
 
@@ -191,7 +193,7 @@ body {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-#left li img {
+#left img {
   width: 24px;
   height: 24px;
   margin-right: 24px;
@@ -204,14 +206,33 @@ body {
   line-height: 40px;
   font-size: 1.4rem;
   font-weight: 500;
-  color: #030303;
+  color: #606060;
 }
 
-#left hr{
+#left hr {
   background-color: rgba(0, 0, 0, 0.1);
   height: 1px;
   border: none;
   margin: 12px 0;
+}
+
+#left a {
+  color: #606060;
+  text-decoration: none;
+}
+
+#menu-links1,
+#menu-links2 {
+  padding: 16px 24px 0 24px;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-weight: 20px;
+}
+
+#menu-links3 p {
+  padding: 16px 24px;
+  text-align: left;
+  color: #909090;
 }
 
 
