@@ -6,7 +6,7 @@ body {
   width: 100%;
 }
 
-#container {
+#contant {
   width: 100%;
   height: 100%;
   margin: auto;
@@ -240,9 +240,60 @@ body {
 #right {
   width: 1664px;
   height: 913px;
-  background-color: rgb(103, 103, 247);
   position: fixed;
   top: 56px;
   left: 240px;
-  float: right;
+  float: left;
+}
+
+#right #contents {
+  width: 100%;
+  height: 100%;
+  margin-top: 24px;
+}
+
+#videos {
+  width: 100%;
+  height: 25%;
+  margin: 0 16px;
+}
+
+.video {
+  width: calc(25% - 64px) ;
+  height: 100%;
+  float: left;
+  background: #065fd4;
+  text-align: center;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-bottom: 40px;
+}
+
+.video .big {
+  width: 276px;
+}
+
+.small {
+  width: 25%;
+  float: left;
+}
+
+.video .small-icon {
+  width: 36px;
+  height: 36px;
+  margin-top: 12px;
+  margin-right: 12px;
+}
+
+.word {
+  width: 75%;
+  float: left;
+}
+
+.text {
+  display: block;
+  cursor: pointer;
+  font-size: 1.4rem;
+  line-height: 25px;
+  text-align: left;
 }
