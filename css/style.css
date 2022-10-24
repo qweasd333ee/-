@@ -9,11 +9,10 @@ body {
 #contant {
   width: 100%;
   height: 100%;
-  margin: auto;
 }
 
 #header {
-  width: 1872px;
+  width: 100%;
   height: 56px;
   padding: 0 16px;
   position: fixed;
@@ -42,7 +41,7 @@ body {
   float: left;
 }
 
-#logo-icon img {
+#logo img {
   width: 90px;
   height: 20px;
   padding: 18px 14px 18px 16px;
@@ -161,9 +160,9 @@ body {
 }
 
 #container {
-  width: 100%;
-  height: calc(100% - 56px);
-  float: left;
+  width: calc(100% - 240px);
+  height: 100%;
+  margin-left: 240px;
 }
 
 #left {
@@ -171,12 +170,24 @@ body {
   height: 913px;
   /* background-color: green; */
   position: fixed;
-  top: 56px;
-  left: 0;
-  float: left;
-  /* overflow: auto; */
+  margin-top: 56px;
+  overflow: hidden;
+  box-sizing: border-box
+}
+
+#left:hover {
+  padding-right: 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
   max-height: 95%;
-  overflow-y: overlay;
+}
+
+#left ul:nth-child(1) {
+  padding: 12px 0;
+}
+
+#left ul:nth-child(2) {
+  padding: 8px 0;
 }
 
 #left li {
@@ -209,6 +220,11 @@ body {
   color: #606060;
 }
 
+#left a {
+  color: #606060;
+  text-decoration: none;
+}
+
 #left hr {
   background-color: rgba(0, 0, 0, 0.1);
   height: 1px;
@@ -216,9 +232,25 @@ body {
   margin: 12px 0;
 }
 
-#left a {
-  color: #606060;
-  text-decoration: none;
+#menu-texts {
+  width: 240px;
+  height: 120px;
+  margin: auto;
+}
+
+#menu-text {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: 400;
+}
+
+#login-icon img {
+  margin: 0;
+}
+
+#login-icon p {
+  padding: 0;
+  color: #065fd4;
 }
 
 #menu-links1,
@@ -238,43 +270,57 @@ body {
 
 
 #right {
-  width: 1664px;
+  width: 100%;
   height: 913px;
   position: fixed;
-  top: 56px;
-  left: 240px;
+  margin-top: 56px;
   float: left;
+  background-color: #f9f9f9;
+  overflow: auto;
+  max-height: 90%;
 }
 
 #right #contents {
-  width: 100%;
+  width: 1664px;
   height: 100%;
-  margin-top: 24px;
+  margin-top: 80px;
 }
 
-#videos {
-  width: 100%;
-  height: 25%;
-  margin: 0 16px;
+#menu2 {
+  width: 1664px;
+  height: 56px;
+  background: rgba(255, 255, 255, 0.99);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 55px;
+}
+
+.videos {
+  width: 1504px;
+  height: 35%;
+  margin: 0 80px;
+  /* background-color: #5a2a2a; */
 }
 
 .video {
-  width: calc(25% - 64px) ;
+  width: calc(25% - 16px);
   height: 100%;
   float: left;
-  background: #065fd4;
-  text-align: center;
+  /* background: #065fd4; */
   margin-left: 8px;
   margin-right: 8px;
   margin-bottom: 40px;
+  cursor: pointer;
 }
 
-.video .big {
-  width: 276px;
+.video .video-big-pic{
+  width: 360px;
 }
 
-.small {
-  width: 25%;
+.icon {
+  width: 48px;
+  height: 35%;
   float: left;
 }
 
@@ -283,17 +329,40 @@ body {
   height: 36px;
   margin-top: 12px;
   margin-right: 12px;
+  border-radius: 50%;
 }
 
-.word {
-  width: 75%;
+.info {
+  width: 288px;
+  height: 35%;
   float: left;
+  padding-right: 24px;
 }
 
-.text {
-  display: block;
-  cursor: pointer;
+.video-name {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+.video-info {
   font-size: 1.4rem;
-  line-height: 25px;
-  text-align: left;
+  line-height: 2rem;
+  font-weight: 400;
+  color: #606060;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #999999;
+  border-radius: 100px;
 }
