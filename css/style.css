@@ -234,18 +234,24 @@ body {
 
 #menu-texts {
   width: 240px;
-  height: 120px;
-  margin: auto;
+  height: 98px;
 }
 
 #menu-text {
+  padding: 0 24px;
   font-size: 1.4rem;
-  line-height: 2rem;
+  line-height: 20px;
   font-weight: 400;
+  text-align: center;
+}
+
+#login-icon {
+  margin: 8px 0 8px 35px;
 }
 
 #login-icon img {
-  margin: 0;
+  text-align: center;
+  margin-right: 0;
 }
 
 #login-icon p {
@@ -294,6 +300,29 @@ body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 55px;
+}
+
+#menu2-list {
+  width: 100%;
+  height: 56px;
+  margin: 0 250px;
+}
+
+#menu2-list div {
+  display: inline-block;
+  border: 1px solid rgb(0, 0, 0, 0.1);
+  border-radius: 16px;
+  font-size: 1.4rem;
+  padding: 8px 12px;
+  margin: 12px 12px 12px 0;
+  color: #030303;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+#menu2-list div:hover {
+  background: rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
 }
 
 .videos {
@@ -351,6 +380,12 @@ body {
   line-height: 2rem;
   font-weight: 400;
   color: #606060;
+}
+
+.video:hover {
+  width: calc(30% - 16px);
+  height: 120%;
+  box-shadow: 10px 10px 15px black;
 }
 
 ::-webkit-scrollbar {

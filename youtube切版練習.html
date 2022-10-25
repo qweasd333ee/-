@@ -62,9 +62,9 @@
       </ul>
       <hr>
       <div id="menu-texts">
-        <p id="menu-text">
+        <div id="menu-text">
           登入帳戶即可對影片表示喜歡、發布留言及訂閱頻道。
-        </p>
+        </div>
         <a id="login-icon" href="./youtube切版練習.html">
           <img src="./images/icon/login-icon.png">
           <p>登入</p>
@@ -122,6 +122,18 @@
       <div id="right">
         <div id="contents">
           <div id="menu2">
+            <div id="menu2-list">
+              <div class="menu2-list">全部</div>
+              <div class="menu2-list">遊戲</div>
+              <div class="menu2-list">音樂</div>
+              <div class="menu2-list">直播中</div>
+              <div class="menu2-list">棒球</div>
+              <div class="menu2-list">觀光</div>
+              <div class="menu2-list">烹飪</div>
+              <div class="menu2-list">自然</div>
+              <div class="menu2-list">卡通</div>
+              <div class="menu2-list">最新上傳</div>
+            </div>
           </div>
           <div class="videos">
             <div class="video">
@@ -382,6 +394,16 @@
       </div>
     </div>
   </div>
+  <script>
+    const menu2List = document.getElementsByClassName('.menu2-list')
+    for(let list of menu2List) {
+      list.onclick = () => {
+        // menu2List.style.background = "rgba(0, 0, 0)";
+        console.log(menu2List.style)
+      }
+      
+    }
+  </script>
 </body>
 
 </html>
